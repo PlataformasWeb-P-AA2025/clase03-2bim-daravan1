@@ -1,4 +1,4 @@
-<h2>Listado de Estudiantes</h3>
+<h2>Listado de Estudiantes</h2>
 
 <h3>Número de estudiantes {{ numero_estudiantes }}</h3>
 
@@ -9,9 +9,10 @@
   <b>{{e.nombre}}</b> {{e.apellido}} {{e.cedula}}
   <br/>
   <ul>
-  {% for numero in e.mis_numeros_telefonicos.all %}
+  {% for numero in e.mis_numeros_telefonicos.all %} 
+  <!-- Como llama al modelo no se usa () en el .all -->
       <li>
-          Número telefónico {{numero.telefono}} {{ numero.estudiante.apellido }}<br/>
+          Número telefónico {{numero.telefono}} {{ numero.estudiante.apellido }}<br/> 
       </li>
   {% endfor %}
   </ul>
@@ -23,6 +24,7 @@
 <ul>
 
 {% for e in mis_numeros_telefonicos %}
+<!-- En este caso se usa el numero de las views -->
   <li>{{ e }} </li>
 {% endfor %}
 
