@@ -1,0 +1,24 @@
+
+<h3>Listado de Paises</h3>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Capital</th>
+    <th>Numero de Provincias</th>
+    <th>Numero de Habitantes</th>
+  </tr>
+
+ {% for e in paises %}
+  <tr>
+  <tr>
+    <td>{{ e.nombre }}</td>
+    <td>{{ e.capital }}</td>
+    <td>{{ e.num_provincias }}</td>
+    <td>{{ e.num_habitantes }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<!-- Pimera vez-z que se da click se redirige con un GET -->
+[<a href="{% url 'crear_pais' %}">agregar pais</a>]
+
