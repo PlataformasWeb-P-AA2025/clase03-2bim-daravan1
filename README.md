@@ -9,4 +9,4 @@ Cuando no se encuentra en los modelos la relación con relate_name se puede segu
 ### 25 junio 2025
 
 * Se agrega un número telefonico a un estudiante especifico. Para esto se llama a la clase NumeroTelefonicoEstudianteForm(ModelForm) 
-que recibe un objeto de tipo estudiante, gracias a un init se obtienen los atributos del objeto y se lo esconden en el formulario el ingreso de  datos gracias a un forms.widgets.HiddenInput() para que esos atributos no sean modificados al ingresar un nuevo número.
+que recibe un objeto de tipo estudiante, gracias a un init se obtienen los atributos del objeto y se esconde en el formulario el ingreso de datos gracias a un forms.widgets.HiddenInput() para que esos atributos no sean modificados al ingresar un nuevo número.
