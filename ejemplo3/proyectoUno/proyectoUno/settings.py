@@ -100,6 +100,24 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+JAZZMIN_SETTINGS = {
+    "site_title": "Admin de Ordenamiento",
+    "site_header": "Sistema Territorial",
+    "site_brand": "Gestión Territorial",
+    "welcome_sign": "Bienvenido al sistema de administración",
+    "copyright": "Tu institución",
+    
+    # Menú lateral personalizado
+    "show_sidebar": True,
+    "navigation_expanded": True,
+
+    # Logos
+    "site_logo": "static/img/logo.png",  # si tienes un logo
+    "site_icon": None,
+
+    # Tipografía, colores, etc.
+    "theme": "minty",  # o flatly, darkly, lumen, solar, etc.
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
